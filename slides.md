@@ -27,7 +27,6 @@ drawings:
 
 <Logo position="top-left" size="sm" />
 
-
 ---
 src: ./pages/01.md
 ---
