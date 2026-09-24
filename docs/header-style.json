@@ -1,0 +1,104 @@
+
+{
+  "style": {
+    "name": "ToyStories",
+    "theme": "storybook woodland",
+    "description": "Уютный сказочный интерфейс детского маркетплейса с рисованными иллюстрациями, природными цветами и винтажной бумажной текстурой.",
+    "colors": {
+      "background": "#DCE8CC",
+      "navbar": "#F2F2DF",
+      "primary": "#315855",
+      "secondary": "#6D876A",
+      "accent": "#F5BD58",
+      "accentHover": "#E8A844",
+      "text": "#303E36",
+      "mutedText": "#6B7064",
+      "border": "#596D54",
+      "searchBackground": "#FAF6E9",
+      "paper": "#F8EBD1"
+    },
+    "typography": {
+      "style": "handwritten, playful, vintage",
+      "fontFamily": "Caveat, Neucha, Comic Neue, cursive",
+      "logo": {
+        "fontSize": "36px",
+        "fontWeight": 800,
+        "color": "#315855"
+      },
+      "sectionLabel": {
+        "fontSize": "19px",
+        "fontWeight": 600,
+        "textAlign": "center"
+      }
+    },
+    "layout": {
+      "header": {
+        "height": "74px",
+        "padding": "10px 16px",
+        "borderRadius": "20px",
+        "background": "#F2F2DF",
+        "border": "1px solid #839276",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "flex-start",
+        "gap": "20px",
+        "width": "100%",
+        "boxSizing": "border-box",
+        "componentOrder": [
+          "logo",
+          "sectionLabel"
+        ]
+      },
+      "background": {
+        "type": "illustrated",
+        "scene": "Сказочный лес с деревьями, холмами, облаками, солнцем и маленьким домиком",
+        "texture": "watercolor paper",
+        "palette": "muted pastel earth tones"
+      }
+    },
+    "components": {
+      "logo": {
+        "text": "ToyStories",
+        "mascot": "Рисованный плюшевый медведь с красным шарфом",
+        "style": "hand-drawn watercolor",
+        "color": "#315855",
+        "order": 1,
+        "flexShrink": 0,
+        "position": "left",
+        "display": "flex",
+        "alignItems": "center"
+      },
+      "sectionLabel": {
+        "text": "",
+        "background": "#F8EBD1",
+        "texture": "aged parchment",
+        "shape": "torn paper",
+        "fontSize": "19px",
+        "color": "#38382E",
+        "rotation": "-1deg",
+        "order": 2,
+        "flex": "1 1 auto",
+        "minWidth": "70%",
+        "maxWidth": "100%",
+        "boxSizing": "border-box",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "padding": "12px 24px",
+        "position": "relative"
+      }
+    },
+    "visualEffects": {
+      "illustration": "hand-drawn watercolor",
+      "texture": "subtle grain and paper",
+      "shadows": "soft and minimal",
+      "corners": "rounded and organic",
+      "borders": "thin, slightly irregular",
+      "mood": "warm, nostalgic, friendly, whimsical"
+    }
+  }
+}
