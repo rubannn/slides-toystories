@@ -1,0 +1,97 @@
+{
+  "style": {
+    "name": "Винтажная советская детская 2D-анимация",
+    "genre": "Рисованный детский мультфильм",
+    "era": "1980-е — начало 1990-х",
+    "visual_aesthetic": "Традиционная рисованная мультипликация с акварельными оттенками, мягкими линиями и характерной эстетикой старых телевизионных мультфильмов",
+    "animation": {
+      "type": "Традиционная покадровая 2D-анимация",
+      "technique": "Ручная рисовка на прозрачных анимационных плёнках",
+      "linework": "Тонкие, слегка неровные контурные линии коричневого, серого и приглушённого чёрного цвета",
+      "shading": "Преимущественно плоская заливка с небольшими цветовыми переходами",
+      "texture": "Мягкая зернистость, лёгкая размытость, характерная для аналоговой телевизионной записи",
+      "frame_rate_aesthetic": "Классическая рисованная телевизионная анимация"
+    },
+    "color_palette": {
+      "dominant_colors": [
+        "#D9E5CF",
+        "#A3BBD0",
+        "#C94432",
+        "#E7B84C",
+        "#368D91",
+        "#E4A0BB",
+        "#D9CBA1"
+      ],
+      "saturation": "Средняя, местами высокая",
+      "contrast": "Низкий или средний",
+      "temperature": "Тёплая, слегка желтоватая",
+      "color_treatment": "Немного выцветшие пастельные цвета с отдельными яркими акцентами",
+      "background": "Светлые пастельные оттенки зелёного, голубого и кремового"
+    },
+    "character_design": {
+      "proportions": "Стилизованная человеческая анатомия, крупная голова, длинные тонкие конечности, компактное туловище",
+      "shapes": "Округлые, упрощённые и слегка асимметричные формы",
+      "facial_expressions": "Добродушные и выразительные, с минимальным количеством деталей",
+      "eyes": "Маленькие стилизованные глаза с простыми зрачками",
+      "outlines": "Тонкие, мягкие, неравномерные контуры",
+      "hair": "Объёмные стилизованные причёски с крупными цветными прядями",
+      "clothing": "Свободная одежда с упрощёнными складками, широкими рукавами и декоративными элементами",
+      "accessories": "Крупные очки и простые геометрические аксессуары"
+    },
+    "environment": {
+      "setting": "Условный сказочный городской мир",
+      "background_style": "Минималистичные рисованные декорации с приглушёнными цветами",
+      "background_elements": [
+        "Яркая деревянная скамейка",
+        "Упрощённые геометрические конструкции",
+        "Небольшие стилизованные игрушки",
+        "Мягкие цветовые пятна"
+      ],
+      "perspective": "Условная двухмерная перспектива с небольшими нарушениями реалистичных пропорций",
+      "detail_level": "Низкий или средний",
+      "depth": "Плоское пространство с чётким разделением переднего и заднего планов"
+    },
+    "lighting": {
+      "type": "Мягкое равномерное освещение",
+      "shadows": "Минимальные или отсутствуют",
+      "highlights": "Очень слабые, преимущественно нарисованные",
+      "mood": "Добрый, мечтательный, спокойный, ностальгический"
+    },
+    "camera": {
+      "shot": "Средний или общий план персонажа",
+      "angle": "Фронтальный, на уровне персонажа",
+      "composition": "Центральное расположение главного персонажа, симметричная или слегка асимметричная композиция",
+      "aspect_ratio": "4:3",
+      "perspective_distortion": "Небольшая стилизация перспективы"
+    },
+    "post_processing": {
+      "resolution": "Невысокое разрешение аналоговой телевизионной записи",
+      "sharpness": "Мягкая, слегка размытая",
+      "grain": "Мелкая аналоговая зернистость",
+      "color_bleeding": "Незначительное размытие цветовых границ",
+      "vhs_effect": "Лёгкий",
+      "film_aging": "Небольшое выцветание цветов и тёплый оттенок старой плёнки",
+      "edge_quality": "Мягкие, местами слегка расплывчатые контуры"
+    },
+    "generation_prompt": "Vintage 1980s hand-drawn Soviet children's cartoon, traditional 2D cel animation, whimsical character design, thin slightly uneven brown outlines, soft pastel watercolor-like colors, flat color fills, simplified anatomy, expressive cartoon faces, oversized stylized hair, loose clothing, minimalistic hand-painted backgrounds, warm nostalgic atmosphere, slightly faded analog television colors, subtle VHS softness, gentle film grain, classic 4:3 television animation frame.",
+    "negative_prompt": [
+      "3D rendering",
+      "CGI",
+      "photorealism",
+      "realistic anatomy",
+      "hyperrealistic textures",
+      "modern digital cartoon",
+      "glossy animation",
+      "vector art",
+      "perfectly smooth outlines",
+      "dramatic cinematic lighting",
+      "strong shadows",
+      "high contrast",
+      "neon colors",
+      "ultra sharp details",
+      "depth of field",
+      "realistic skin textures",
+      "modern anime style"
+    ]
+  }
+}
