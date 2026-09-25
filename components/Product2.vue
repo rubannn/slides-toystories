@@ -44,7 +44,7 @@
   border-radius: 8px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
   color: var(--v-theme-on-surface, #111);
-  margin: 120px auto;
+  margin: 0px auto;
 }
 .product-card header h3 {
   margin: 0;
