@@ -50,7 +50,7 @@ const advantages = [
 
 <style scoped>
 .advantages {
-  height: fit-content;
+  height: 100%;
   padding: 18px 22px;
 
   border-left: 1px solid rgba(23, 73, 75, 0.15);

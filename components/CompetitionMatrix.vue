@@ -39,7 +39,7 @@
 
     <div class="competitor competitor--toystories">
       <strong>ToyStories</strong>
-      <span>parents · toys · exchange</span>
+      <span>toys · exchange · marketplace</span>
     </div>
   </div>
 </template>
@@ -48,7 +48,7 @@
 .competition-matrix {
   position: relative;
   width: 100%;
-  height: 380px;
+  height: 300px;
 }
 
 /* AXES */
@@ -105,7 +105,7 @@
 .axis-label--right {
   right: 0;
   top: 50%;
-  transform: translate(10%, -50%) rotate(90deg);
+  transform: translate(55%, -50%) rotate(90deg);
 }
 
 /* COMPETITORS */
@@ -128,12 +128,12 @@
 }
 
 .competitor strong {
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
 }
 
 .competitor span {
-  font-size: 9px;
+  font-size: 8px;
   opacity: 0.55;
 }
 
@@ -141,17 +141,17 @@
 
 .competitor--olx {
   left: 17%;
-  top: 59%;
+  top: 69%;
 }
 
 .competitor--shafa {
   left: 32%;
-  top: 67%;
+  top: 59%;
 }
 
 .competitor--toyswap {
   left: 55%;
-  top: 59%;
+  top: 39%;
 }
 
 .competitor--toystories {
