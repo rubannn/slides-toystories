@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, watch, onBeforeUnmount } from 'vue'
+import { ref, computed, watch, onBeforeUnmount } from 'vue'
 
 // left/top/width/rotate/z — «свободный» режим: картинка позиционируется абсолютно
 // (для коллажей с наложениями). Без них — обычный режим внутри сетки.
@@ -15,6 +15,18 @@ const props = defineProps<{
 }>()
 
 const free = props.left !== undefined
+
+// картинки берём через сборщик (а не по URL из public/), чтобы они попадали в билд
+const images = import.meta.glob('../images/*.{png,jpg,jpeg,webp,svg}', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+}) as Record<string, string>
+
+const resolvedSrc = computed(() => {
+  const name = props.src.split('/').pop()
+  return images[`../images/${name}`] ?? props.src
+})
 
 const zoomed = ref(false)
 
@@ -49,7 +61,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey, true))
     } : undefined"
   >
     <img
-      :src="src"
+      :src="resolvedSrc"
       class="zoom-img"
       :class="zoomed ? 'zoom-img--open' : 'rounded-xl shadow'"
       :style="zoomed ? undefined : free ? {
