@@ -14,6 +14,6 @@
   top: 120px;
   left: 0;
   padding: 40px;
-  background-color: antiquewhite;
+  background-color: cornsilk;
 }
 </style>
