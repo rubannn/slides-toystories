@@ -2,23 +2,23 @@
 const advantages = [
   {
     number: "01",
-    title: "Local map",
-    description: "Find offers near home",
+    title: "Карта місцевих пропозицій",
+    description: "Шукайте пропозиції поруч із домом",
   },
   {
     number: "02",
-    title: "Buy · sell · exchange · donate",
-    description: "Several ways to reuse toys",
+    title: "Купуйте · продавайте · обмінюйте · віддавайте",
+    description: "Різні способи повторного використання іграшок",
   },
   {
     number: "03",
-    title: "Parent-oriented filters",
-    description: "Age · category · interests",
+    title: "Фільтри, орієнтовані на батьків",
+    description: "Вік · категорія · інтереси",
   },
   {
     number: "04",
-    title: "AI-assisted listings",
-    description: "Description + price recommendation",
+    title: "Оголошення за допомогою ШІ",
+    description: "Опис + рекомендації щодо ціни",
   },
 ];
 
@@ -26,28 +26,23 @@ const competitors = [
   {
     name: "OLX",
     values: [
-      "Large scale & selection",
-      "Strong brand recognition",
-      "Sales of children's products",
-      "Lacks a narrow focus on parents' needs",
+      "Великий масштаб і широкий асортимент",
+      "Відсутність вузької спеціалізації на потребах батьків",
     ],
   },
   {
     name: "Shafa",
     values: [
-      "A developed marketplace",
-      "Search, ratings, secure payment and delivery",
-      "Paid promotion",
-      "Broader focus than just children's products",
+      "Розвинений маркетплейс",
+      "Ширша спеціалізація, ніж лише дитячі товари",
     ],
   },
   {
     name: "ToySwap.world",
     values: [
-      "Closest direct competitor",
-      "Buying, selling, exchanging and donating toys",
-      "Specialization in toys",
-      "Smaller audience and number of offers",
+      "Найближчий прямий конкурент",
+      "Спеціалізація на іграшках",
+      "Менша аудиторія та кількість пропозицій",
     ],
   },
 ];
@@ -109,13 +104,13 @@ const competitors = [
   flex-direction: column;
   gap: 24px;
 
-  border-left: 1px solid rgba(23, 73, 75, 0.15);
+  border-right: 1px solid rgba(23, 73, 75, 0.15);
 
   color: #17494b;
 }
 
 .advantages__container {
-  padding: 0 12px;
+  padding: 0 24px;
 }
 
 .competitors__list {

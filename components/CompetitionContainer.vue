@@ -5,8 +5,8 @@ import CompetitionMatrix from "./CompetitionMatrix.vue";
 
 <template>
   <div class="competition-container">
-    <CompetitionMatrix />
     <CompetitionAdvantages />
+    <CompetitionMatrix />
   </div>
 </template>
 
