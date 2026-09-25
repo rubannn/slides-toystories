@@ -5,8 +5,8 @@ transition: slide-left
 ---
 
 <div class="grid grid-cols-2 gap-6 items-center w-full px-8">
-  <img src="/images/ts_01.png" class="w-full max-h-[400px] object-contain rounded-xl shadow" style="transform: translateY(-50px)" />
-  <img src="/images/ts_02.png" class="w-full max-h-[400px] object-contain rounded-xl shadow" style="transform: translateY(50px)" />
+  <ZoomImage src="/images/ts_01.png" :offset="-50" :maxHeight="400" />
+  <ZoomImage src="/images/ts_02.png" :offset="50" :maxHeight="400" />
 </div>
 
 <Logo position="bottom-right" size="sm" />
@@ -18,8 +18,8 @@ transition: fade-out
 ---
 
 <div class="grid grid-cols-2 gap-6 items-center w-full px-8">
-  <img src="/images/ts_03.png" class="w-full max-h-[400px] object-contain rounded-xl shadow" style="transform: translateY(60px)" />
-  <img src="/images/ts_04.png" class="w-full max-h-[400px] object-contain rounded-xl shadow" style="transform: translateY(-40px)" />
+  <ZoomImage src="/images/ts_03.png" :offset="60" :maxHeight="400" />
+  <ZoomImage src="/images/ts_04.png" :offset="-40" :maxHeight="400" />
 </div>
 
 <Logo position="top-left" size="sm" />
@@ -31,8 +31,8 @@ transition: slide-up
 ---
 
 <div class="grid grid-cols-2 gap-6 items-center w-full px-8">
-  <img src="/images/ts_05.png" class="w-full max-h-[400px] object-contain rounded-xl shadow" style="transform: translateY(-30px)" />
-  <img src="/images/ts_06.png" class="w-full max-h-[400px] object-contain rounded-xl shadow" style="transform: translateY(70px)" />
+  <ZoomImage src="/images/ts_05.png" :offset="-30" :maxHeight="400" />
+  <ZoomImage src="/images/ts_06.png" :offset="70" :maxHeight="400" />
 </div>
 
 <Logo position="bottom-right" size="sm" />
@@ -44,8 +44,8 @@ transition: fade
 ---
 
 <div class="grid grid-cols-2 gap-6 items-center w-full px-8">
-  <img src="/images/ts_07.png" class="w-full max-h-[400px] object-contain rounded-xl shadow" style="transform: translateY(40px)" />
-  <img src="/images/ts_08.png" class="w-full max-h-[400px] object-contain rounded-xl shadow" style="transform: translateY(-60px)" />
+  <ZoomImage src="/images/ts_07.png" :offset="40" :maxHeight="400" />
+  <ZoomImage src="/images/ts_08.png" :offset="-60" :maxHeight="400" />
 </div>
 
 <Logo position="top-left" size="sm" />
@@ -57,8 +57,8 @@ transition: slide-left
 ---
 
 <div class="grid grid-cols-2 gap-6 items-center w-full px-8">
-  <img src="/images/ts_09.png" class="w-full max-h-[400px] object-contain rounded-xl shadow" style="transform: translateY(-70px)" />
-  <img src="/images/ts_10.png" class="w-full max-h-[400px] object-contain rounded-xl shadow" style="transform: translateY(30px)" />
+  <ZoomImage src="/images/ts_09.png" :offset="-70" :maxHeight="400" />
+  <ZoomImage src="/images/ts_10.png" :offset="30" :maxHeight="400" />
 </div>
 
 <Logo position="bottom-right" size="sm" />
