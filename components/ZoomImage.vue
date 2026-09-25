@@ -1,11 +1,20 @@
 <script setup lang="ts">
 import { ref, watch, onBeforeUnmount } from 'vue'
 
-defineProps<{
+// left/top/width/rotate/z — «свободный» режим: картинка позиционируется абсолютно
+// (для коллажей с наложениями). Без них — обычный режим внутри сетки.
+const props = defineProps<{
   src: string
   offset?: number
   maxHeight?: number
+  left?: number
+  top?: number
+  width?: number
+  rotate?: number
+  z?: number
 }>()
+
+const free = props.left !== undefined
 
 const zoomed = ref(false)
 
@@ -28,12 +37,24 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey, true))
 </script>
 
 <template>
-  <div class="zoom-cell">
+  <!-- wrapper без transform: иначе fixed-картинка привяжется к нему, а не к слайду -->
+  <div
+    class="zoom-cell"
+    :class="{ 'zoom-cell--free': free }"
+    :style="free ? {
+      left: left + 'px',
+      top: (top ?? 0) + 'px',
+      width: (width ?? 300) + 'px',
+      zIndex: zoomed ? 100 : (z ?? 1),
+    } : undefined"
+  >
     <img
       :src="src"
       class="zoom-img"
       :class="zoomed ? 'zoom-img--open' : 'rounded-xl shadow'"
-      :style="zoomed ? undefined : {
+      :style="zoomed ? undefined : free ? {
+        transform: `rotate(${rotate ?? 0}deg)`,
+      } : {
         maxHeight: (maxHeight ?? 400) + 'px',
         transform: `translateY(${offset ?? 0}px)`,
       }"
@@ -43,6 +64,18 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey, true))
 </template>
 
 <style scoped>
+.zoom-cell--free {
+  position: absolute;
+}
+
+.zoom-cell--free .zoom-img:not(.zoom-img--open) {
+  transition: transform 0.2s;
+}
+
+.zoom-cell--free .zoom-img:not(.zoom-img--open):hover {
+  transform: scale(1.04) !important;
+}
+
 .zoom-img {
   width: 100%;
   object-fit: contain;
