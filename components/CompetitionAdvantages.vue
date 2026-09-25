@@ -3,22 +3,18 @@ const advantages = [
   {
     number: "01",
     title: "Карта місцевих пропозицій",
-    description: "Шукайте пропозиції поруч із домом",
   },
   {
     number: "02",
     title: "Купуйте · продавайте · обмінюйте · віддавайте",
-    description: "Різні способи повторного використання іграшок",
   },
   {
     number: "03",
     title: "Фільтри, орієнтовані на батьків",
-    description: "Вік · категорія · інтереси",
   },
   {
     number: "04",
     title: "Оголошення за допомогою ШІ",
-    description: "Опис + рекомендації щодо ціни",
   },
 ];
 
@@ -65,7 +61,6 @@ const competitors = [
 
           <div class="advantage__content">
             <strong>{{ advantage.title }}</strong>
-            <span>{{ advantage.description }}</span>
           </div>
         </article>
       </div>
