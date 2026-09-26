@@ -7,23 +7,23 @@
 
     <section class="content">
       <ul class="features">
-        <li>
+        <li :style="{ borderTopColor: '#6da8d8' }">
           <strong>Транзакції:</strong> «Продаж», «Обмін», «Віддам» — кнопки для
           швидкої дії.
         </li>
-        <li>
+        <li :style="{ borderTopColor: '#72a853' }">
           <strong>Локальний пошук:</strong> інтерактивна карта, налаштування
           радіуса, фільтри.
         </li>
-        <li>
+        <li :style="{ borderTopColor: '#e26b6b' }">
           <strong>Комунікація:</strong> внутрішній чат та фіксація місця
           зустрічі.
         </li>
-        <li>
+        <li :style="{ borderTopColor: '#e0a83e' }">
           <strong>Безпека:</strong> закриття завершених угод, рейтинги та
           відгуки.
         </li>
-        <li>
+        <li :style="{ borderTopColor: '#6da8d8' }">
           <strong>Монетизація:</strong> швидкий вхід (Google/Apple), реферальна
           програма, платне підняття.
         </li>
@@ -38,38 +38,49 @@
 
 <style scoped>
 .product-card {
-  width: min(760px, 100%);
-  background: rgba(255, 255, 255, 0.02);
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  color: var(--v-theme-on-surface, #111);
+  width: min(900px, 100%);
+  color: #17494b;
+  text-align: left;
   margin: 0px auto;
+}
+.product-card header {
+  text-align: center;
 }
 .product-card header h3 {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: 1.6rem;
 }
 .product-card .tag {
-  margin: 6px 0 12px;
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 0.9rem;
+  margin: 6px 0 16px;
+  color: #17494b;
+  opacity: 0.75;
+  font-size: 1rem;
 }
+/* кожен елемент — окрема картка, стиль як на слайді «Проблема» */
 .product-card .features {
-  list-style: decimal;
-  padding-left: 20px;
+  list-style: none;
+  padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
 }
 .product-card .features li {
-  margin: 8px 0;
-}
-.product-card .features {
-  list-style: decimal;
-  padding-left: 20px;
+  grid-column: span 2;
   margin: 0;
-  display: inline-block;
-  text-align: left;
-  max-width: 640px;
-  width: 100%;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border-top: 4px solid;
+  background-color: #f3e5c7;
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+.product-card .features li:nth-child(n + 4) {
+  grid-column: span 3;
+}
+.product-card .features strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.15rem;
 }
 </style>

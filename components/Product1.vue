@@ -34,11 +34,13 @@
 <style scoped>
 .product-card {
   width: min(760px, 100%);
-  background: rgba(255, 255, 255, 0.02);
-  padding: 16px;
+  /* стиль карточки как на слайде «Проблема» */
+  background-color: #f3e5c7;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  color: var(--v-theme-on-surface, #111);
+  border-top: 4px solid #6da8d8;
+  color: #17494b;
+  text-align: left;
   margin: 0px auto;
 }
 .product-card header h3 {
@@ -47,7 +49,8 @@
 }
 .product-card .tag {
   margin: 6px 0 12px;
-  color: rgba(0, 0, 0, 0.6);
+  color: #17494b;
+  opacity: 0.75;
   font-size: 0.92rem;
 }
 .product-card .lead {
@@ -66,7 +69,7 @@
   flex-direction: column;
   gap: 6px;
   font-size: 0.95rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: #17494b;
 }
 @media (min-width: 700px) {
   .product-card .personas {
