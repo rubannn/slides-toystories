@@ -1,7 +1,7 @@
 ---
 layout: center
 class: h-full
-transition: slide-left
+transition: slide-up
 ---
 
 <PageContainerImg>
@@ -19,7 +19,7 @@ transition: slide-left
 ---
 layout: center
 class: h-full
-transition: fade-out
+transition: slide-right
 ---
 
 <PageContainerImg>
