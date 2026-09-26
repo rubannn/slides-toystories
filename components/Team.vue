@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const colors = ["#6da8d8", "#72a853", "#e26b6b", "#e0a83e"];
+
 const members = [
   {
     name: "Ольга Фурсова",
@@ -29,7 +31,12 @@ const members = [
 
 <template>
   <div class="team__grid">
-    <div v-for="member in members" class="team__member">
+    <div
+      v-for="(member, i) in members"
+      :key="member.name"
+      class="team__member"
+      :style="{ borderTopColor: colors[i % colors.length] }"
+    >
       <strong>{{ member.name }}</strong>
       <span>{{ member.role }}</span>
       <p>{{ member.description }}</p>
@@ -41,28 +48,34 @@ const members = [
 .team__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 24px;
+  text-align: left;
 }
 
+/* стиль карточек как на слайде «Проблема» */
 .team__member {
   padding: 20px;
-  border: 1px solid #17494b;
+  border-radius: 8px;
+  border-top: 4px solid;
+  background-color: #f3e5c7;
+  color: #17494b;
 }
 
 .team__member strong {
   display: block;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .team__member span {
   display: block;
-  margin-top: 4px;
-  font-size: 10px;
-  color: #17494b;
+  margin-top: 2px;
+  font-size: 13px;
+  opacity: 0.75;
 }
 
 .team__member p {
   margin: 10px 0 0;
-  font-size: 9px;
+  font-size: 13px;
+  line-height: 1.35;
 }
 </style>
