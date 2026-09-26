@@ -48,10 +48,13 @@
 }
 .product-card header h3 {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 2.25rem; /* text-4xl, як заголовок «Одна локальна платформа…» */
+  font-weight: 700;
+  line-height: 1.25;
+  color: #17494b;
 }
 .product-card .tag {
-  margin: 6px 0 16px;
+  margin: 6px 0 28px;
   color: #17494b;
   opacity: 0.75;
   font-size: 1rem;
