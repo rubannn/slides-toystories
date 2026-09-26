@@ -1,0 +1,17 @@
+/* Перехід «spin»: новий слайд з'являється з обертанням на 360° */
+.spin-enter-active {
+  transition: transform 1.8s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 1.2s ease;
+}
+
+.spin-enter-from {
+  opacity: 0;
+  transform: rotate(-360deg) scale(0.1);
+}
+
+.spin-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.spin-leave-to {
+  opacity: 0;
+}
